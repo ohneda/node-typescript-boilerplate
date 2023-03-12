@@ -1,11 +1,27 @@
 {
-    "image":"mcr.microsoft.com/devcontainers/universal:2",
+    "image":"mcr.microsoft.com/devcontainers/javascript-node:0-18",
+    "features": {
+      "ghcr.io/devcontainers/features/node:1": {
+        "version": "19",
+        "additionalVersions": "18"
+      },
+      "./local-features/nvs": "latest",
+      "ghcr.io/devcontainers/features/sshd:1": {
+        "version": "latest"
+      },
+      "ghcr.io/devcontainers/features/git:1": {
+        "version": "latest",
+        "ppa": "false"
+      }
+    },
     "customizations": {
         "vscode" : {
             "extensions": [
                 // TypeScript
                 "dbaeumer.vscode-eslint",
                 "oouo-diogo-perdigao.docthis",
+                "orta.vscode-jest",
+                "esbenp.prettier-vscode",
                 // Files
                 "bungcip.better-toml",
                 "yzhang.markdown-all-in-one",
