@@ -1,19 +1,5 @@
 {
     "image":"mcr.microsoft.com/devcontainers/javascript-node:0-18",
-    "features": {
-      "ghcr.io/devcontainers/features/node:1": {
-        "version": "19",
-        "additionalVersions": "18"
-      },
-      "./local-features/nvs": "latest",
-      "ghcr.io/devcontainers/features/sshd:1": {
-        "version": "latest"
-      },
-      "ghcr.io/devcontainers/features/git:1": {
-        "version": "latest",
-        "ppa": "false"
-      }
-    },
     "customizations": {
         "vscode" : {
             "extensions": [
